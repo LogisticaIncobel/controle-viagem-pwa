@@ -1,0 +1,16 @@
+
+{
+  "short_name": "Viagem",
+  "name": "Controle de Viagem PWA",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Registro de eventos de viagem de motoristas",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
