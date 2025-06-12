@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Controle de Viagem</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, select, button { display: block; margin-bottom: 10px; padding: 8px; width: 100%; max-width: 400px; }
+    .event-button { background: green; color: white; border: none; padding: 10px; margin-top: 5px; cursor: pointer; }
+    .event-button:disabled { background: #ccc; cursor: not-allowed; }
+    .hidden { display: none; }
+    #historico { margin-top: 30px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Controle de Viagem</h1>
+  <div id="login">
+    <input type="text" id="cpf" placeholder="Digite seu CPF" />
+    <button onclick="confirmarCpf()">Entrar</button>
+    <p id="cpf-msg" style="color: red;"></p>
+  </div>
+  <div id="painel" class="hidden">
+    <label>Placa do Cavalo:</label>
+    <select id="placaCavalo"></select>
+
+    <label>Placa da Carreta:</label>
+    <select id="placaCarreta"></select>
+
+    <p>Último evento: <span id="eventoAtualNome"></span></p>
+    <div id="botoes"></div>
+
+    <div id="historico">
+      <h3>Histórico:</h3>
+      <ul id="historicoLista"></ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
